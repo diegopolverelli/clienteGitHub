@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cliente 2</h1>
+    <button onclick="getInfo1()">Info</button>
+    <button onclick="getInfo2()">Info2</button>
+
+    <script>
+        const getInfo1=async()=>{
+            data=await fetch('http://localhost:3000/info')
+            resultado=await (data).text()
+            console.log(resultado)
+        }
+
+        const getInfo2=async()=>{
+            data=await fetch('http://localhost:3000/info2')
+            resultado=await (data).text()
+            console.log(resultado)
+        }
+
+</script>
+</body>
+</html>
