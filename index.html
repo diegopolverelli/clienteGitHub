@@ -13,13 +13,13 @@
 
     <script>
         const getInfo1=async()=>{
-            data=await fetch('http://localhost:3000/info')
+            data=await fetch('http://localhost:3000/test')
             resultado=await (data).text()
             console.log(resultado)
         }
 
         const getInfo2=async()=>{
-            data=await fetch('http://localhost:3000/info2')
+            data=await fetch('http://localhost:3000/test2')
             resultado=await (data).text()
             console.log(resultado)
         }
